@@ -4,15 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    .grid-container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:8px;
+        padding:10px;    
+    }
+      
+    header {
+    background: #557ba1;
+    color: white;
+    text-align: center;
+    padding: 10px 0 ;
+   }
+
+   .destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 15px;
+    font-size: 20px;
+    color: #0066cc;
+}
+
+.card p {
+    margin: 10px 15px;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    width: calc(100% - 30px);
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004c99;
+}
+
+    </style>
 </head>
 <body>
-    <h2>Destination1</h2>
-    <img src="destination1.jpg" alt="img1">
+     <header>
+        <h1>Explore your Travel Destinations</h1>
+    </header>
 
-    <h2>Destination2</h2>
-    <img src="destination2.jpg" alt="img1">
+    <section class="destination">
+        <div class="grid-container">
+        <div class="card">
+            <img src="paris.jpg" alt="Paris">
+            <h2>Paris, France</h2>
+            <p>Enjoy the romance, culture, and art of the City of Light.</p>
+            <p><strong>Price:</strong> ₹1,20,000</p>
+            <a href="Book.html"><button type="button">Book Now</button></a>
+        </div>
 
-    <h2>Destination3</h2>
-    <img src="destination3.jpg" alt="img1">
+        <div class="card">
+            <img src="bali.jpeg" alt="Bali">
+            <h2>Bali, Indonesia</h2>
+            <p>Relax on tropical beaches and explore lush forests and temples.</p>
+            <p><strong>Price:</strong> ₹90,000</p>
+            <a href="Book.html"><button type="button">Book Now</button></a>
+        </div>
+
+        <div class="card">
+            <img src="new_york.jpeg" alt="New York">
+            <h2>New York, USA</h2>
+            <p>Visit iconic landmarks like Times Square and the Statue of Liberty.</p>
+            <p><strong>Price:</strong> ₹1,50,000</p>
+            <a href="Book.html"><button type="button">Book Now</button></a>
+        </div>
+
+        <div class="card">
+            <img src="ooty.jpeg" alt="Ooty">
+            <h2>Ooty, India</h2>
+            <p>Ooty, the Queen of Hill stations, welcomes you with mesmerising meadows</p>
+            <p><strong>Price:</strong> ₹50,000</p>
+            <a href="Book.html"><button type="button">Book Now</button></a>
+        </div>
+
+        <div class="card">
+            <img src="manali.jpeg" alt="Manali">
+            <h2>Manali, India</h2>
+            <p>Life is a climb, but the view from the top is always worth it - especially in Manali.</p>
+            <p><strong>Price:</strong> ₹ 70,000</p>
+            <a href="Book.html"><button type="button">Book Now</button></a>
+        </div>
+
+        <div class="card">
+            <img src="london.jpg" alt="London">
+            <h2>London, UK</h2>
+            <p>You will recognize the first sign of age, my child: when you walk the streets of London and realize for the first time how young the police look.</p>
+            <p><strong>Price:</strong> ₹ 1,70,000</p>
+            <a href="Book.html"><button type="button">Book Now</button></a>
+        </div>
+
+        <div class="card">
+            <img src="dubai.jpeg" alt="Dubai">
+            <h2>Dubai, United Arab Emirates (UAE)</h2>
+            <p>The desert may seem barren, but Dubai has turned it into an oasis of possibilities.</p>
+            <p><strong>Price:</strong> ₹ 90,000</p>
+            <a href="Book.html"><button type="button">Book Now</button></a>
+        </div>
+
+        <div class="card">
+            <img src="maldives.jpeg" alt="Maldives">
+            <h2>Maldives </h2>
+            <p>Maldives, where the only thing better than the views is the food.</p>
+            <p><strong>Price:</strong> ₹ 1,00,000</p>
+            <a href="Book.html"><button type="button">Book Now</button></a>
+        </div>
+
+
+       
+        </div>
+
+    </section>
+    
+    
+    
+    
 </body>
 </html>
+
+
